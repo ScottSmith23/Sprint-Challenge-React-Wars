@@ -14,7 +14,7 @@ const App = () => {
     <div className="App">
       {/* <h1 className="Header">React Wars</h1> */}
       <img src={require("./img/starwarz.png")} alt="react wars logo" />
-      <h2>Cast of Characters</h2>
+      <h2 style={{fontFamily: 'Odibee Sans',fontSize:`60px`,color:`LIGHTCYAN`}}>Cast of Characters</h2>
       <CardList />
     </div>
   );

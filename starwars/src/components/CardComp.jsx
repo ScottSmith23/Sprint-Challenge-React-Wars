@@ -27,7 +27,7 @@ const CardComp = ({ char }) => {
 
     <Col xs="5" md="5" xl="5">
         <CardDiv>
-      <Card style={{backgroundColor:`DARKSLATEGREY`}} >
+      <Card style={{backgroundColor:`DARKSLATEGREY`,borderRadius:`30px`}} >
         <CardHeader style={{fontFamily: 'Knewave',fontSize:"23px",color:`KHAKI`}}>{char.name}</CardHeader>
         <CardBody>
             <ImageS src={require("../img/placeHolder.png")} />
