@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import CardList from "./components/CardList";
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -11,7 +12,10 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">React Wars</h1>
+      {/* <h1 className="Header">React Wars</h1> */}
+      <img src={require("./img/starwarz.png")} alt="react wars logo" />
+      <h2>Cast of Characters</h2>
+      <CardList />
     </div>
   );
 }
