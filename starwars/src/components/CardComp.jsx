@@ -13,6 +13,11 @@ import styled from "styled-components"
 const CardDiv = styled.div`
 margin-top:30px;
 `;
+const ImageS = styled.img`
+
+width:70%;
+
+`
 const CardComp = ({ char }) => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -25,6 +30,7 @@ const CardComp = ({ char }) => {
       <Card style={{backgroundColor:`DARKSLATEGREY`}} >
         <CardHeader style={{fontFamily: 'Knewave',fontSize:"23px",color:`KHAKI`}}>{char.name}</CardHeader>
         <CardBody>
+            <ImageS src={require("../img/placeHolder.png")} />
         <Button color="primary" onClick={toggle} style={{ marginBottom: '1rem',marginTop:"1rem",backgroundColor:"orange" }}>Bio Info</Button>
         <Collapse isOpen={isOpen} style={{color:`KHAKI`}}>
           <CardText>Height: {char.height}cm</CardText>
